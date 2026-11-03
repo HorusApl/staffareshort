@@ -1,0 +1,13 @@
+name: StaffAreShort
+version: '1.4'
+main: com.muhammaddaffa.staffareshort.StaffAreShort
+api-version: '1.13'
+authors: [aglerr]
+website: https://muhammaddaffa.com/
+softdepend:
+  - PlaceholderAPI
+  - WorldGuard
+commands:
+  tempfly:
+  flyspeed:
+  fly:

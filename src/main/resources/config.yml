@@ -1,0 +1,48 @@
+
+# List of worlds that flight will be disabled
+blacklisted-worlds:
+  - world_no_flight
+
+# List of regions that flight will be disabled
+blacklisted-regions:
+  - region_no_flight
+
+# Hunger loss when flying configuration
+hunger-loss:
+  # The distance that
+  block-distance: 320
+  # Amount of hunger that will be loss (1-20) and maybe saturation
+  regular-loss:
+    hunger: 2
+    saturation: 1
+  # Hovering hunger loss, this happens when player travelling less than the block distance
+  # configured above, if player is exactly doing that, we will considered that as hovering.
+  hover-loss:
+    hunger: 1
+    saturation: 0.5
+  # How often should we check the conditions? (in seconds)
+  check-interval: 60
+
+# This placeholder will return if the tempfly is permanent
+tempfly-permanent-placeholder: "∞"
+
+messages:
+  reload: "&6[TempFly] &aConfig reloaded!"
+  no-permission: "&6[TempFly] &cYou don't have access to do this!"
+  invalid-amount: "&6[TempFly] &cInvalid amount, must be (1 - 10)"
+  user-not-found: "&6[TempFly] &cUser not found!"
+  give-duration: "&6[TempFly] &aGive &e{duration} &atemp fly duration to &e{player}"
+  take-duration: "&6[TempFly] &aRemove &e{duration} &atemp fly duration from &e{player}"
+  set-duration: "&6[TempFly] &aSet &e{player} &atemp fly duration to &e{duration}"
+  duration-ran-out: "&6[TempFly] &cYou have ran out of flight duration!"
+  enter-blacklisted-area: "&6[TempFly] &cYour flight has been automatically disabled because you are entering restricted flight area!"
+  fly-speed: "&6[TempFly] &aFly Speed changed to: &e{speed}"
+  unable-fly: "&6[TempFly] &cYou don't have flight duration!"
+  flight-on: "&6[TempFly] &aFlight activated!"
+  flight-off: "&6[TempFly] &cFlight deactivated!"
+  help:
+    - "&6&lStaffAreShort &7- by aglerr"
+    - "&6/tempfly give <player> <duration> &7- give tempfly duration to specific player"
+    - "&6/tempfly take <player> <duration> &7- take tempfly duration to specific player"
+    - "&6/tempfly set <player> <duration> &7- set tempfly duration to specific player"
+    - "&6/tempfly reload &7- reload configuration"
